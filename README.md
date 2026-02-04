@@ -1,4 +1,4 @@
-\# 🔐 Failed Login Detection \& Alerting (SOC Project)
+# 🔐 Failed Login Detection \& Alerting (SOC Project)
 
 
 
@@ -10,7 +10,7 @@ A Security Operations Center (SOC) style project that detects \*\*failed login a
 
 
 
-\## 📌 Project Overview
+# 📌 Project Overview
 
 
 
@@ -26,7 +26,7 @@ It simulates how a \*\*SOC Level 1 analyst\*\* monitors authentication failures 
 
 
 
-\## 🚀 Features
+# 🚀 Features
 
 
 
@@ -52,7 +52,7 @@ It simulates how a \*\*SOC Level 1 analyst\*\* monitors authentication failures 
 
 
 
-\## 🧠 Brute Force Detection Logic
+# 🧠 Brute Force Detection Logic
 
 
 
@@ -66,7 +66,7 @@ Attempts ≥ 3  → High severity (Brute Force)
 
 
 
-🏗️ Project Architecture
+# 🏗️ Project Architecture
 
 
 
@@ -114,7 +114,7 @@ Failed Login Detection \& Alerting
 
 
 
-📸 Screenshots
+# 📸 Screenshots
 
 
 
@@ -144,7 +144,7 @@ Failed Login Detection \& Alerting
 
 
 
-⚙️ Tech Stack
+# ⚙️ Tech Stack
 
 
 
@@ -174,7 +174,7 @@ Git \& GitHub
 
 
 
-▶️ How to Run the Project
+# ▶️ How to Run the Project
 
 
 
@@ -212,7 +212,7 @@ Admin → /admin/
 
 
 
-🎯 SOC Use Case (Real-Life Example)
+# 🎯 SOC Use Case (Real-Life Example)
 
 
 
@@ -222,7 +222,7 @@ If an attacker tries multiple passwords for the same system or IP, this tool det
 
 
 
-👨‍💻 Author
+# 👨‍💻 Author
 
 
 
