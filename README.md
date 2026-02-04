@@ -66,13 +66,9 @@ Attempts ≥ 3  → High severity (Brute Force)
 
 
 
-# 🏗️ Project Architecture
-
-
+## 🏗️ Project Architecture
 
 Failed Login Detection \& Alerting
-
-│
 
 ├── detector/               # Core SOC logic
 
@@ -88,8 +84,6 @@ Failed Login Detection \& Alerting
 
 │   └── urls.py
 
-│
-
 ├── templates/              # HTML UI pages
 
 │   ├── dashboard.html
@@ -97,8 +91,6 @@ Failed Login Detection \& Alerting
 │   ├── events.html
 
 │   └── alerts.html
-
-│
 
 ├── static/                 # CSS styling
 
@@ -111,120 +103,63 @@ Failed Login Detection \& Alerting
 └── README.md
 
 
-
-
-
-# 📸 Screenshots
-
-
+## 📸 Screenshots
 
 1️⃣ Windows Event Viewer (Event ID 4625)
 
-
-
 2️⃣ Dashboard Summary
-
-
 
 3️⃣ Failed Login Events Page
 
-
-
 4️⃣ Brute Force Alert Detection
 
-
-
 5️⃣ Django Admin – SOC Monitoring
-
-
 
 6️⃣ Project Structure
 
 
-
-
-
-# ⚙️ Tech Stack
-
-
+## ⚙️ Tech Stack
 
 Python 3
 
-
-
 Django
-
-
 
 Windows Event Logs
 
-
-
 SQLite
 
-
-
 HTML / CSS
-
-
 
 Git \& GitHub
 
 
-
-
-
-# ▶️ How to Run the Project
-
-
+## ▶️ How to Run the Project
 
 \# Activate virtual environment
 
 venv\\Scripts\\activate
 
-
-
 \# Run Django server
 
 python manage.py runserver
 
-
-
 Access:
-
-
 
 Dashboard → http://127.0.0.1:8000/
 
-
-
 Events → /events/
 
-
-
 Alerts → /alerts/
-
-
 
 Admin → /admin/
 
 
-
-
-
 # 🎯 SOC Use Case (Real-Life Example)
-
-
 
 If an attacker tries multiple passwords for the same system or IP, this tool detects repeated failures and flags it as a brute-force attempt, just like a real SOC environment.
 
 
-
-
-
 # 👨‍💻 Author
-
-
 
 Sandeep Mandal
 
