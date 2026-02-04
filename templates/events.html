@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Failed Login Events</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>❌ Failed Login Events (Event ID 4625)</h1>
+
+    <!-- ================= USER BASED ALERT ================= -->
+    {% if user_alerts %}
+    <div class="card alert-user">
+        <h2>👤 User-Based Brute Force Detected</h2>
+        {% for alert in user_alerts %}
+            <p>
+                User <b>{{ alert.user }}</b> had
+                <b>{{ alert.attempts }}</b> failed login attempts
+                <br>
+                Severity: <b>{{ alert.severity }}</b>
+            </p>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- ================= IP BASED ALERT ================= -->
+    {% if alerts %}
+    <div class="card alert-ip">
+        <h2>🌐 IP-Based Brute Force Detected</h2>
+        {% for alert in alerts %}
+            <p>
+                IP <b>{{ alert.ip }}</b> generated
+                <b>{{ alert.attempts }}</b> failed logins
+                <br>
+                Severity: <b>{{ alert.severity }}</b>
+            </p>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- ================= FAILED LOGIN TABLE ================= -->
+    <div class="card">
+        <h2>📄 Failed Login Logs</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>User</th>
+                    <th>IP Address</th>
+                    <th>Logon Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in logs %}
+                <tr>
+                    <td>{{ log.time }}</td>
+                    <td>{{ log.username }}</td>
+                    <td>{{ log.ip }}</td>
+                    <td>{{ log.logon_type }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="4">No failed login events found</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <a href="/" class="btn">⬅ Back to Dashboard</a>
+</div>
+
+</body>
+</html>

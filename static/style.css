@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0B1220;          /* Deep cyber navy */
+  color: #E6F1FF;               /* Soft white text */
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.card {
+  background: #162A45;          /* Midnight blue */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border-left: 4px solid #00E5FF; /* Cyber accent */
+}
+
+/* IP-based brute force alert */
+.alert-ip {
+  border-left: 5px solid #F97316; /* Orange = High */
+}
+
+/* User-based brute force alert */
+.alert-user {
+  border-left: 5px solid #DC2626; /* Red = Critical */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #1E3A5F;
+}
+
+th {
+  background: #1E3A5F;          /* Steel blue header */
+  color: #E6F1FF;
+}
+
+tr:hover {
+  background: #0F1B2D;          /* Hover effect */
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #00E5FF;          /* Neon cyan */
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #1FB6FF;
+}

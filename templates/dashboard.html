@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SOC Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Failed Login Detection & Alerting</h1>
+    <p>Windows Security Logs Monitoring (Event ID 4625)</p>
+
+    <div class="card">
+      <h2>Status</h2>
+      <p>Day 1 setup completed ✅</p>
+    </div>
+    <a class="btn" href="/events/">View Failed Login Events</a>
+  </div>
+
+  <div class="card">
+  <h2>Summary</h2>
+  <p>Total Failed Login Events: <b>{{ total_events }}</b></p>
+  <p>Total Brute Force Alerts: <b>{{ total_alerts }}</b></p>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<h2>Brute Force Alerts</h2>
+
+<table>
+  <tr>
+    <th>IP Address</th>
+    <th>Attempts</th>
+    <th>Severity</th>
+    <th>Detected At</th>
+  </tr>
+
+  {% for alert in alerts %}
+  <tr>
+    <td>{{ alert.ip_address }}</td>
+    <td>{{ alert.attempts }}</td>
+    <td>{{ alert.severity }}</td>
+    <td>{{ alert.detected_at }}</td>
+  </tr>
+  {% empty %}
+  <tr>
+    <td colspan="4">No alerts found</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<a href="/">Back to Dashboard</a>
+<h2>Brute Force Alerts</h2>
+
+<table border="1">
+<tr>
+    <th>IP</th>
+    <th>Attempts</th>
+    <th>Severity</th>
+    <th>Detected At</th>
+</tr>
+
+{% for alert in alerts %}
+<tr>
+    <td>{{ alert.ip_address }}</td>
+    <td>{{ alert.attempts }}</td>
+    <td>{{ alert.severity }}</td>
+    <td>{{ alert.detected_at }}</td>
+</tr>
+{% endfor %}
+</table>
